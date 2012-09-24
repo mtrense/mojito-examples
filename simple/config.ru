@@ -20,7 +20,7 @@ class TestApp
 	include	Mojito
 	controller :runtime
 	rendering :all
-	include Mojito::H::ExceptionHandling
+	helper :exception_handling
 	
 	routes do
 		on 'method' do
