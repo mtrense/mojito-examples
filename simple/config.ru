@@ -18,8 +18,8 @@ end
 
 class TestApp	
 	include	Mojito
-	include Mojito::C::Runtime
-	include Mojito::Rendering
+	controller :runtime
+	rendering :all
 	include Mojito::H::ExceptionHandling
 	
 	routes do
